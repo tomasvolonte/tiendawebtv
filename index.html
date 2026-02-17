@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda Premium</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Encabezado principal">
+      <div class="container header-inner">
+        <a href="#" class="brand" aria-label="Inicio Tienda Premium">Tienda Premium</a>
+        <button id="cart-toggle" class="cart-btn" aria-label="Abrir carrito">
+          Carrito <span id="cart-count" aria-live="polite">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="container" aria-label="Listado de productos">
+      <section class="products" id="products-grid"></section>
+    </main>
+
+    <aside id="mobile-cart" class="cart-drawer" aria-label="Carrito de compras" aria-hidden="true">
+      <div class="drawer-header">
+        <h2>Tu carrito</h2>
+        <button id="drawer-close" aria-label="Cerrar carrito">✕</button>
+      </div>
+      <ul id="cart-items"></ul>
+      <a href="cart.html" class="go-cart">Ir a cart.html</a>
+    </aside>
+
+    <div id="toast-root" class="toast-root" aria-live="assertive" aria-atomic="true"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
